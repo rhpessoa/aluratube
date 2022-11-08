@@ -15,8 +15,11 @@ import {
   PlayListName,
   ImageThumb,
   TituloThumb,
+  NomeUserFav,
+  UserImgFav,
+  FavoriteCards,
 } from "../src/components/Timeline";
-import { ContainMenu, Logo } from "../src/components/Menu";
+import Menu from "../src/components/Menu";
 
 function HomePage() {
   return (
@@ -31,7 +34,7 @@ function HomePage() {
       >
         <Menu />
         <Header />
-        <Timeline playlists={config.playlists} />
+        <Timeline playlists={config.playlists} favoritos={config.favoritos} />
       </div>
     </>
   );
@@ -52,6 +55,7 @@ function Header() {
 }
 function Timeline(propriedades) {
   const playlistNames = Object.keys(propriedades.playlists);
+  const favoritosNames = Object.keys(propriedades.favoritos);
   return (
     <ContainTimeline>
       {playlistNames.map((playlistName) => {
@@ -72,17 +76,28 @@ function Timeline(propriedades) {
           </VideoCard>
         );
       })}
+
+      {favoritosNames.map((favoritosName) => {
+        const favoritos = propriedades.favoritos[favoritosName];
+        return (
+          <FavoriteCards>
+            <h2>{favoritosName}</h2>
+            <div>
+              {favoritos.map((favorito) => {
+                return (
+                  <section>
+                    <UserImgFav
+                      src={`https://github.com/${favorito.user_nickname}.png`}
+                    />
+                    <NomeUserFav>{`@${favorito.user_nickname}`}</NomeUserFav>
+                  </section>
+                );
+              })}
+            </div>
+          </FavoriteCards>
+        );
+      })}
     </ContainTimeline>
-  );
-}
-
-
-
-function Menu() {
-  return (
-    <ContainMenu>
-      <Logo />
-    </ContainMenu>
   );
 }
 
