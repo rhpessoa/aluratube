@@ -9,14 +9,14 @@ export const PlayListName = styled.h2`
   font-size: 16px;
   margin-bottom: 16px;
   text-transform: capitalize;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
 export const NomeUserFav = styled.span`
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 8px;
   align-self: center;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
 export const UserImgFav = styled.img`
   width: 100px;
@@ -30,6 +30,7 @@ export const ImageThumb = styled.img`
   width: 100%;
   max-width: 210px;
   height: auto;
+  border-radius: 12px;
 `;
 export const FavoriteCards = styled.div`
   display: flex;
@@ -37,7 +38,7 @@ export const FavoriteCards = styled.div`
   margin-left: 16px;
   margin-bottom: 22px;
   h2 {
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.textColorBase || "#222222"};
     font-size: 16px;
     font-weight: bold;
   }
@@ -50,19 +51,35 @@ export const FavoriteCards = styled.div`
     margin-left: 10px;
     margin-top: 16px;
   }
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
 `;
+export const LogoCanal = styled.img`
+  width: 100%;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 36px;
+  margin-right: 5px;
+  margin-top: 5px;
+`;
 export const TituloThumb = styled.span`
+
   padding-top: 8px;
   display: block;
-  padding-right: 24px;
-  color: ${({ theme }) => theme.text};
+  font-size: 16px;
+  
+  text-align: left;
+  color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
+export const InfoVideo = styled.section`
+display: flex;
+flex-direction: row-reverse;
+margin-bottom: 10px;
+`
 export const ContainTimeline = styled.div`
-  background-color: ${({ theme }) => theme.inside};
   flex: 1;
   width: 100%;
   overflow: hidden;
@@ -106,7 +123,10 @@ export default function Timeline({ valorDaBusca, ...propriedades }) {
                   return (
                     <a key={video.url} href={video.url}>
                       <ImageThumb src={video.thumb} />
-                      <TituloThumb>{video.title}</TituloThumb>
+                      <InfoVideo>
+                        <TituloThumb>{video.title}</TituloThumb>
+                        <LogoCanal src={video.logoCanal} />
+                      </InfoVideo>
                     </a>
                   );
                 })}
