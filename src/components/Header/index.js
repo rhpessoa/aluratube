@@ -15,9 +15,7 @@ export const UserImg = styled.img`
 `;
 export const UserContain = styled.div`
   display: flex;
-  margin-left: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding: 16px;
 `;
 export const UserInfo = styled.section`
   align-self: center;
@@ -33,3 +31,19 @@ export const UserJob = styled.p`
   font-size: 16px;
   color: #666666;
 `;
+
+
+export default function Header(props) {
+  return (
+    <StyledHeader>
+      <BannerImg src={props.config.url_banner} />
+      <UserContain>
+        <UserImg src={`https://github.com/${props.config.github}.png`} />
+        <UserInfo>
+          <UserName>{props.config.name}</UserName>
+          <UserJob>{props.config.job}</UserJob>
+        </UserInfo>
+      </UserContain>
+    </StyledHeader>
+  );
+}
