@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: ${({ theme }) => theme.body};
 `;
 export const BannerImg = styled.img`
   width: 100%;
@@ -25,6 +26,7 @@ export const UserName = styled.h2`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
+  color: ${({ theme }) => theme.text};
 `;
 export const UserJob = styled.p`
   font-family: Arial, Helvetica, sans-serif;

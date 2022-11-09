@@ -9,12 +9,14 @@ export const PlayListName = styled.h2`
   font-size: 16px;
   margin-bottom: 16px;
   text-transform: capitalize;
+  color: ${({ theme }) => theme.text};
 `;
 export const NomeUserFav = styled.span`
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 8px;
   align-self: center;
+  color: ${({ theme }) => theme.text};
 `;
 export const UserImgFav = styled.img`
   width: 100px;
@@ -35,6 +37,7 @@ export const FavoriteCards = styled.div`
   margin-left: 16px;
   margin-bottom: 22px;
   h2 {
+    color: ${({ theme }) => theme.text};
     font-size: 16px;
     font-weight: bold;
   }
@@ -56,10 +59,10 @@ export const TituloThumb = styled.span`
   padding-top: 8px;
   display: block;
   padding-right: 24px;
-  color: ${({ theme }) => theme.textColorBase || "#222222"};
+  color: ${({ theme }) => theme.text};
 `;
 export const ContainTimeline = styled.div`
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.inside};
   flex: 1;
   width: 100%;
   overflow: hidden;
