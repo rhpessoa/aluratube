@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import Search from "./Search";
 import DarkModeSwitch from "./DarkModeSwitch";
+
 const StyledMenu = styled.header`
   display: flex;
   flex-direction: row;
   height: 56px;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.body};
-  border: 1px solid ${({ theme }) => theme.base};
+  background-color: ${({ theme }) => theme.backgroundLevel1 || "#FFFFFF"};
+  border: 1px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
   align-items: center;
   padding: 0 16px;
   gap: 16px;
@@ -20,7 +21,7 @@ const StyledMenu = styled.header`
       max-width: 127px;
     }
     .text {
-      fill: ${({ theme }) => theme.text};
+      fill: ${({ theme }) => theme.textColorBase || "#222222"};
     }
   }
 `;
@@ -74,14 +75,12 @@ function Logo() {
 export default function Menu({
   valorDaBusca = { valorDaBusca },
   setValorDaBusca = { setValorDaBusca },
-  tema = { tema },
-  setTema = { setTema },
 }) {
   return (
     <StyledMenu>
       <Logo />
       <Search valorDaBusca={valorDaBusca} setValorDaBusca={setValorDaBusca} />
-      <DarkModeSwitch tema={tema} setTema={setTema} />
+      <DarkModeSwitch />
     </StyledMenu>
   );
 }

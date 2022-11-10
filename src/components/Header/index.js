@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.body};
+  background-color: ${({ theme }) => theme.backgroundLevel1};
 `;
 export const BannerImg = styled.img`
   width: 100%;
@@ -26,12 +26,12 @@ export const UserName = styled.h2`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
 export const UserJob = styled.p`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #666666;
+  color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
 
 
