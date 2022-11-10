@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import config from "../config.json";
-
 import Timeline from "../src/components/Timeline";
 import Menu from "../src/components/Menu";
 import Header from "../src/components/Header";
 
 function HomePage() {
   const [valorDaBusca, setValorDaBusca] = React.useState("");
+
   return (
     <>
       <Menu valorDaBusca={valorDaBusca} setValorDaBusca={setValorDaBusca} />

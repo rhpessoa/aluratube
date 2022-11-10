@@ -1,6 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../src/components/GlobalStyle";
+import { VideoPlayerProvider } from "../src/common/context/VideoPlayer";
+import VideoPlayer from "./videoplayer";
 import ColorModeProvider, {
   ColorModeContext,
 } from "../src/common/context/ColorMode";
@@ -32,7 +34,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme[contexto.mode]}>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <VideoPlayerProvider>
+        <Component {...pageProps} />
+      </VideoPlayerProvider>
     </ThemeProvider>
   );
 }

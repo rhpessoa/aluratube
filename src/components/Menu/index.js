@@ -25,7 +25,7 @@ const StyledMenu = styled.header`
     }
   }
 `;
-function Logo() {
+export function Logo() {
   return (
     <svg
       className="logo"
