@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import Link from "next/link";
+
+import { VideoPlayerContext } from "../../common/context/VideoPlayer";
+import { useContext } from "react";
 export const VideoCard = styled.section`
   width: 100%;
   padding: 0;
@@ -66,19 +70,18 @@ export const LogoCanal = styled.img`
   margin-top: 5px;
 `;
 export const TituloThumb = styled.span`
-
   padding-top: 8px;
   display: block;
   font-size: 16px;
-  
+
   text-align: left;
   color: ${({ theme }) => theme.textColorBase || "#222222"};
 `;
 export const InfoVideo = styled.section`
-display: flex;
-flex-direction: row-reverse;
-margin-bottom: 10px;
-`
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+`;
 export const ContainTimeline = styled.div`
   flex: 1;
   width: 100%;
@@ -103,6 +106,7 @@ export const ContainTimeline = styled.div`
   }
 `;
 export default function Timeline({ valorDaBusca, ...propriedades }) {
+  const { setVideoPlayer } = useContext(VideoPlayerContext);
   const playlistNames = Object.keys(propriedades.playlists);
   const favoritosNames = Object.keys(propriedades.favoritos);
   return (
@@ -121,8 +125,10 @@ export default function Timeline({ valorDaBusca, ...propriedades }) {
                 })
                 .map((video) => {
                   return (
-                    <a key={video.url} href={video.url}>
-                      <ImageThumb src={video.thumb} />
+                    <a key={video.title} onClick={() => setVideoPlayer(video)}>
+                      <Link href="/videoplayer">
+                        <ImageThumb src={video.thumb} />
+                      </Link>
                       <InfoVideo>
                         <TituloThumb>{video.title}</TituloThumb>
                         <LogoCanal src={video.logoCanal} />
