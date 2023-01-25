@@ -1,51 +1,42 @@
 import styled from "styled-components";
-export const StyledHeader = styled.div`
+import Search from "./Search";
+import DarkModeSwitch from "./DarkModeSwitch";
+import LogoSVG from "../../assets/Icons/LogoSvg";
+
+const StyledMenu = styled.header`
   display: flex;
-  flex-direction: column;
-  background-color: ${({ theme }) => theme.backgroundLevel1};
-`;
-export const BannerImg = styled.img`
+  flex-direction: row;
+  height: 56px;
+  justify-content: space-between;
+  background-color: ${({ theme }) => theme.backgroundLevel1 || "#FFFFFF"};
+  border: 1px solid ${({ theme }) => theme.borderBase || "#e5e5e5"};
+  align-items: center;
+  padding: 0 16px;
+  gap: 16px;
+  position: fixed;
   width: 100%;
-  height: 230px;
-  object-fit: cover;
-`;
-export const UserImg = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-`;
-export const UserContain = styled.div`
-  display: flex;
-  padding: 16px;
-`;
-export const UserInfo = styled.section`
-  align-self: center;
-  margin-left: 11px;
-`;
-export const UserName = styled.h2`
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.textColorBase || "#222222"};
-`;
-export const UserJob = styled.p`
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: ${({ theme }) => theme.textColorBase || "#222222"};
+  .logo {
+    width: 100%;
+    max-width: 80px;
+    @media (min-width: 600px) {
+      max-width: 127px;
+    }
+    .text {
+      fill: ${({ theme }) => theme.textColorBase || "#222222"};
+    }
+  }
 `;
 
 
-export default function Header(props) {
+export default function Header({
+  valorDaBusca = { valorDaBusca },
+  setValorDaBusca = { setValorDaBusca },
+}) {
   return (
-    <StyledHeader>
-      <BannerImg src={props.config.url_banner} />
-      <UserContain>
-        <UserImg src={`https://github.com/${props.config.github}.png`} />
-        <UserInfo>
-          <UserName>{props.config.name}</UserName>
-          <UserJob>{props.config.job}</UserJob>
-        </UserInfo>
-      </UserContain>
-    </StyledHeader>
+    <StyledMenu>
+      <LogoSVG />
+      <Search valorDaBusca={valorDaBusca} setValorDaBusca={setValorDaBusca} />
+      <DarkModeSwitch />
+    </StyledMenu>
   );
 }

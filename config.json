@@ -1,73 +1,57 @@
 {
-  "name": "Rafael Henrique (Donodo)",
-  "job": "Desenvolvedor Front-end",
-  "github": "rhpessoa",
-  "url_banner": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-  "favoritos": {
-    "AluraTubes Favoritos": [
-      {
-        "id": "0",
-        "user_nickname": "rhpessoa"
-      },
-      {
-        "id": "1",
-        "user_nickname": "soulofpluto"
-      }
-    ]
-  },
   "playlists": {
     "jogos": [
       {
         "title": "How to Say NO to your Duo | Broken by Concept Episode 123 | League of Legends Podcast",
-        "url": "https://youtu.be/NlulJT8vgr8",
+        "url": "https://www.youtube.com/embed/NlulJT8vgr8",
         "thumb": "https://i.ytimg.com/vi/NlulJT8vgr8/maxresdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/9AWTN_I7g4lJuyvrqNR7QEfLzXTh7MCc6vDUCs5hGgdi6Ri9jvWTDex_ygUs82CMiyoBMIVCHg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/d_ZAX9Jj5AiD7qoymqFrKMPmnqnrxCIvPdw25sITSyJsZumGJJLN-wRB_6lS3tjoTgKL51QS=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Killing Streamers With Grim Walls",
-        "url": "https://youtu.be/ob0aDpZ38zA",
+        "url": "https://youtu.be/embed/ob0aDpZ38zA",
         "thumb": "https://i.ytimg.com/vi_webp/ob0aDpZ38zA/maxresdefault.webp",
-        "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu8OLEHxP215Qr4SC4f-r0Rj_zfD6v_h2-yMiu4JvA=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/ytc/AL5GRJWD4LJc1JOMS_mC7V4AdW1BlW_TvGPjuELZqjSo8Q=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "'sage get off tiktok'",
-        "url": "https://youtu.be/RI7m1aQUJuI",
+        "url": "https://youtu.be/embed/RI7m1aQUJuI",
         "thumb": "https://i.ytimg.com/vi_webp/RI7m1aQUJuI/maxresdefault.webp?v=607fbae0",
-        "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu8OLEHxP215Qr4SC4f-r0Rj_zfD6v_h2-yMiu4JvA=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/ytc/AL5GRJWD4LJc1JOMS_mC7V4AdW1BlW_TvGPjuELZqjSo8Q=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Brimsaw Man the Brim Shotgun Devil - Opening",
-        "url": "https://youtu.be/AZ13JVSfOCk",
+        "url": "https://youtu.be/embed/AZ13JVSfOCk",
         "thumb": "https://i1.ytimg.com/vi/AZ13JVSfOCk/hqdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/atkGyn-cX2roN7_n761hwbfpdPcoPvkXHMln0lb6pClJPk41gv1ZONgjLGZnhUZjGDPf2H7O=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Why Ashes Is Smashing It",
-        "url": "https://youtu.be/V5T9lPC1TWo",
+        "url": "https://youtu.be/embed/V5T9lPC1TWo",
         "thumb": "https://i.ytimg.com/vi/V5T9lPC1TWo/maxresdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu-LlTVjl5WqkulQXsEfwZ10e-SeB_-2tcc_4rMqTQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Playing New World From Level 1",
-        "url": "https://youtu.be/Sd77fWkySK8",
+        "url": "https://youtu.be/embed/Sd77fWkySK8",
         "thumb": "https://i.ytimg.com/vi/Sd77fWkySK8/maxresdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu-LlTVjl5WqkulQXsEfwZ10e-SeB_-2tcc_4rMqTQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Gaules e time da Furia no Meio da Galera COMPLETO",
-        "url": "https://youtu.be/z_Uj2PkMwoc",
+        "url": "https://youtu.be/embed/z_Uj2PkMwoc",
         "thumb": "https://i.ytimg.com/vi_webp/z_Uj2PkMwoc/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/w9n6rB2X8OrWZcvPBmmhwIPlzGCMs2h7TD9Nfe1xg8TvhESDhrOkhSLBTCL0iKo31wSSQDhZeSE=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "VALORANTA BRONZE HEARTS 3(VALORANT ANIMATION)",
-        "url": "https://youtu.be/a0npbx1Ew-Y",
+        "url": "https://youtu.be/embed/a0npbx1Ew-Y",
         "thumb": "https://i.ytimg.com/vi/a0npbx1Ew-Y/maxresdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/ZeNBhoCLhCFrH8mhj4zSzk2Yloyjnwdp3jY1LBImIPwD5Ji4J8jNcrrw6EedErzNzYD4in0k=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "VALORANTA IRON HEARTS 3 (VALORANT ANIMATION)",
-        "url": "https://youtu.be/YYMiYvmqehU",
+        "url": "https://youtu.be/embed/YYMiYvmqehU",
         "thumb": "https://i.ytimg.com/vi_webp/YYMiYvmqehU/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/ZeNBhoCLhCFrH8mhj4zSzk2Yloyjnwdp3jY1LBImIPwD5Ji4J8jNcrrw6EedErzNzYD4in0k=s48-c-k-c0x00ffffff-no-rj"
       }
@@ -75,67 +59,67 @@
     "Musica": [
       {
         "title": "00's insane medley ft. Giana",
-        "url": "https://youtu.be/zBtS5UT6l_Q?list=RDzBtS5UT6l_Q",
+        "url": "https://youtu.be/embed/zBtS5UT6l_Q?list=RDzBtS5UT6l_Q",
         "thumb": "https://i.ytimg.com/vi/zBtS5UT6l_Q/maxresdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu93qDGRBHP7kDIzz_eNZfBntWxkX6fiqfYnsLcvCQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "2021 EM UMA MÚSICA",
-        "url": "https://www.youtube.com/watch?v=X2mOfqeAH7c",
+        "url": "https://www.youtube.com/embed/watch?v=X2mOfqeAH7c",
         "thumb": "https://i.ytimg.com/vi/X2mOfqeAH7c/maxresdefault.jpg?v=61ce8992",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu9XAVrIb4k5SXOVC2sDhLpaCBWbL7JGKAYwEHXDag=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends)",
-        "url": "https://youtu.be/D9G1VOjN_84",
+        "url": "https://youtu.be/embed/D9G1VOjN_84",
         "thumb": "https://i.ytimg.com/vi/D9G1VOjN_84/maxresdefault.jpg?v=617987d7",
         "logoCanal": "https://yt3.ggpht.com/aXBmHKABw-J-0ZMxj39wkXpLDEHViOdL5UD71cDG2s5vbeQBWk9mdX3rRxT5U6Wfkvm6o8Uu-dU=s48-c-k-c0x00ffffff-no-nd-rj"
       },
       {
         "title": "Cyberpunk: Edgerunners | “I Really Want to Stay At Your House” by Rosa Walton | Music Video",
-        "url": "https://youtu.be/KvMY1uzSC1E",
+        "url": "https://youtu.be/embed/KvMY1uzSC1E",
         "thumb": "https://i.ytimg.com/vi_webp/KvMY1uzSC1E/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu8ez2zjv7E2Sp0qzjYCnrpBMLMm5c26MJkGBIQHww=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Die For You // Videoclipe oficial // VALORANT Champions 2021",
-        "url": "https://youtu.be/h7MYJghRWt0",
+        "url": "https://youtu.be/embed/h7MYJghRWt0",
         "thumb": "https://i.ytimg.com/vi/h7MYJghRWt0/maxresdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/v5CUL_4kvWy9aDQVzNJtWVa1LfhYQbzCJ-mrkkHvRqMiQ1hkNwtHH0y9bkyURmQ5pfu5512vdM4=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/JNAugKWHFoTNsRfZTOOimJxaIRmzPPyBVI7klOuR3YFfvlzFoeNEuc8BnMasXspKFxQsEHKIsg=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Fire Again com Ashnikko // Videoclipe oficial // VALORANT Champions 2022",
-        "url": "https://youtu.be/DqgK4llE1cw",
+        "url": "https://youtu.be/embed/DqgK4llE1cw",
         "thumb": "https://i.ytimg.com/vi/DqgK4llE1cw/maxresdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/v5CUL_4kvWy9aDQVzNJtWVa1LfhYQbzCJ-mrkkHvRqMiQ1hkNwtHH0y9bkyURmQ5pfu5512vdM4=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/JNAugKWHFoTNsRfZTOOimJxaIRmzPPyBVI7klOuR3YFfvlzFoeNEuc8BnMasXspKFxQsEHKIsg=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Metric - Black Sheep (Brie Larson Vocal Version) ft. Brie Larson",
-        "url": "https://youtu.be/1xcSDYy3Dl4?list=RD1xcSDYy3Dl4",
+        "url": "https://youtu.be/embed/1xcSDYy3Dl4?list=RD1xcSDYy3Dl4",
         "thumb": "https://i.ytimg.com/vi/1xcSDYy3Dl4/maxresdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/pjiSQ6Dpw34QorvzT8DCW9UGNVXcWudhYUZas4_mlEcTAw73CriiEK-XGppYEiX0U_WAychrgA=s48-c-k-c0x00ffffff-no-nd-rj"
       },
       {
         "title": "Sam Smith, Kim Petras - Unholy",
-        "url": "https://www.youtube.com/watch?v=Uq9gPaIzbe8",
+        "url": "https://www.youtube.com/embed/watch?v=Uq9gPaIzbe8",
         "thumb": "https://i.ytimg.com/vi/Uq9gPaIzbe8/maxresdefault.jpg?v=6336d30e",
         "logoCanal": "https://yt3.ggpht.com/RUrT5S37CJAo6b-YBd3Kn46Eadau4QkkFYVhSaqzvVhdJFXVRTYt5NStdSN_l-JCiXCLeb8fdA=s48-c-k-c0x00ffffff-no-nd-rj"
       },
       {
         "title": "Cage The Elephant - Cold Cold Cold",
-        "url": "https://www.youtube.com/watch?v=n95eekfFZZg",
+        "url": "https://www.youtube.com/embed/watch?v=n95eekfFZZg",
         "thumb": "https://i.ytimg.com/vi_webp/n95eekfFZZg/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu-ty_CrCHBsbygA5moXj0Z2tfaXeH-ygF_rOWEZHw=s48-c-k-c0x00ffffff-no-rj-mo"
       },
       {
         "title": "Ain't No Rest For The Wicked (Original Version)",
-        "url": "https://www.youtube.com/watch?v=qLP9FaocIUk",
+        "url": "https://www.youtube.com/embed/watch?v=qLP9FaocIUk",
         "thumb": "https://i.ytimg.com/vi_webp/qLP9FaocIUk/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu-ty_CrCHBsbygA5moXj0Z2tfaXeH-ygF_rOWEZHw=s48-c-k-c0x00ffffff-no-rj-mo"
       },
       {
         "title": "lovelytheband - broken (official video)",
-        "url": "https://youtu.be/qr1-WpWOUk8",
+        "url": "https://youtu.be/embed/qr1-WpWOUk8",
         "thumb": "https://i.ytimg.com/vi_webp/qr1-WpWOUk8/maxresdefault.webp",
         "logoCanal": "https://yt3.ggpht.com/JDxXbAGwyXswcsAl329pJ9uB8dLPMaAZ8FW0Z5qHuLaOOIp3ivoDJqjPzk969FvYdOfnfiK5oQ=s48-c-k-c0x00ffffff-no-nd-rj"
       }
@@ -143,45 +127,45 @@
     "back-end": [
       {
         "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-        "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
+        "url": "https://www.youtube.com/embed/watch?v=dvd3pNYh7So",
         "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "CRUD Angular + Spring | 29: Atualizar Curso: Salvando o Formulário",
-        "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
+        "url": "https://www.youtube.com/embed/watch?v=8q36rNS5yVo",
         "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg",
         "logoCanal": "https://yt3.ggpht.com/ytc/AMLnZu_rVZTkA-_ywLx9cZklf7nyxhkaOwd99oGB-DDtRr0=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "O que é o Java? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
+        "url": "https://www.youtube.com/embed/watch?v=90NcVNsKGik",
         "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "O que é Machine Learning? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
+        "url": "https://www.youtube.com/embed/watch?v=Iuz_jc96bQk",
         "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
+        "url": "https://www.youtube.com/embed/watch?v=imB0QVoNrGc",
         "thumb": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
+        "url": "https://www.youtube.com/embed/watch?v=ldRbnpy-qQs",
         "thumb": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s48-c-k-c0x00ffffff-no-rj"
       },
       {
         "title": "O que é o C#? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
+        "url": "https://www.youtube.com/embed/watch?v=0JWMVc1CqpA",
         "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg",
-        "logoCanal": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s48-c-k-c0x00ffffff-no-rj"
+        "logoCanal": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s48-c-k-c0x00ffffff-no-rj"
       }
     ]
   }
