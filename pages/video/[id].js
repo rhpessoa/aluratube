@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
-import { VideoPlayerContext } from "../src/common/context/VideoPlayer";
+import { VideoPlayerContext } from "../../src/context/VideoPlayer";
 import { useContext } from "react";
-import { Logo } from "../src/components/Menu";
-import DarkModeSwitch from "../src/components/Menu/DarkModeSwitch";
+import DarkModeSwitch from "../../src/components/Header/DarkModeSwitch";
+import LogoSVG from "../../src/assets/Icons/LogoSvg";
+import { useRouter } from "next/router";
 
 const ContainVideoPlayer = styled.div`
   background-color: ${({ theme }) => theme.backgroundLevel1};
@@ -47,6 +47,7 @@ const StyledMenu = styled.header`
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 5px;
+    cursor: pointer;
   }
   .left {
     transform: rotate(135deg);
@@ -61,6 +62,10 @@ const StyledMenu = styled.header`
 const VideoPlayerContain = styled.section`
   background-color: ${({ theme }) => theme.backgroundBase};
   padding-top: 57px;
+  div {
+    display: flex;
+    justify-content: center;
+  }
 `;
 export const InfoVideo = styled.section`
   margin: 0 auto;
@@ -79,31 +84,45 @@ export const InfoVideo = styled.section`
 
 export default function VideoPlayer() {
   const { videoPlayer } = useContext(VideoPlayerContext);
-
+  const router = useRouter();
   return (
     <ContainVideoPlayer>
       <StyledMenu>
         <Link href="/">
           <p>
             <a>
-              <i class="arrow left"></i>
+              <i className="arrow left"></i>
             </a>
           </p>
         </Link>
-        <Logo />
+        <LogoSVG />
         <DarkModeSwitch />
       </StyledMenu>
       <VideoPlayerContain>
         <div>
           {videoPlayer ? (
-            <ReactPlayer
-              width={"1024px"}
-              height={"560px"}
-              controls
-              url={videoPlayer.url}
-            />
+            <iframe
+              width="1024px"
+              height="560px"
+              src={`https://www.youtube.com/embed/${router.query.id}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           ) : (
-            ""
+            <Link href="/">
+              <div
+                style={{
+                  fontSize: "30px",
+                  textAlign: "center",
+                  cursor: "pointer",
+                  backgroundColor: "red",
+                  width: "1024px",
+                  height: "560px",
+                }}
+              ><a style={{marginTop: "190px"}}>Ocorreu um erro.</a></div>
+            </Link>
           )}
         </div>
       </VideoPlayerContain>

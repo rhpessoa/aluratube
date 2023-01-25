@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
-
-import { VideoPlayerContext } from "../../common/context/VideoPlayer";
-import { useContext } from "react";
+import FilterUrlById from "../../../utils/filters";
+import { VideoPlayerContext } from "../../context/VideoPlayer";
+import { useContext, useEffect, useState } from "react";
 export const VideoCard = styled.section`
   width: 100%;
   padding: 0;
@@ -95,7 +95,7 @@ export const ContainTimeline = styled.div`
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px, 1fr);
       overflow-x: scroll;
-      scroll-snap-type: x mandatory;
+      scroll-snap-type: none;
       a {
         scroll-snap-align: start;
         color: inherit span {
@@ -105,10 +105,27 @@ export const ContainTimeline = styled.div`
     }
   }
 `;
-export default function Timeline({ valorDaBusca, ...propriedades }) {
+import supabase from "../../config/supabaseClient";
+export default function Timeline({
+  setUserFavoritos,
+  FavoriteUser,
+  valorDaBusca,
+  ...propriedades
+}) {
+  const [videos, setVideos] = useState([]);
+  useEffect(() => {
+    const getVideo = async () => {
+      const { data } = await supabase.from("Videos").select();
+
+      if (data) {
+        setVideos(data);
+        console.log(data);
+      }
+    };
+    getVideo();
+  }, []);
   const { setVideoPlayer } = useContext(VideoPlayerContext);
   const playlistNames = Object.keys(propriedades.playlists);
-  const favoritosNames = Object.keys(propriedades.favoritos);
   return (
     <ContainTimeline>
       {playlistNames.map((playlistName) => {
@@ -125,15 +142,27 @@ export default function Timeline({ valorDaBusca, ...propriedades }) {
                 })
                 .map((video) => {
                   return (
-                    <a key={video.title} onClick={() => setVideoPlayer(video)}>
-                      <Link href="/videoplayer">
+                    <Link
+                      href={{
+                        pathname: `/video/[id]`,
+                        query: {
+                          id: FilterUrlById(video.url),
+                          title: video.title.toUpperCase(),
+                        },
+                      }}
+                      key={video.id}
+                    >
+                      <a
+                        key={video.title}
+                        onClick={() => setVideoPlayer(video)}
+                      >
                         <ImageThumb src={video.thumb} />
-                      </Link>
-                      <InfoVideo>
-                        <TituloThumb>{video.title}</TituloThumb>
-                        <LogoCanal src={video.logoCanal} />
-                      </InfoVideo>
-                    </a>
+                        <InfoVideo>
+                          <TituloThumb>{video.title}</TituloThumb>
+                          <LogoCanal src={video.logoCanal} />
+                        </InfoVideo>
+                      </a>
+                    </Link>
                   );
                 })}
             </div>
@@ -141,31 +170,28 @@ export default function Timeline({ valorDaBusca, ...propriedades }) {
         );
       })}
 
-      {favoritosNames.map((favoritosName) => {
-        const favoritos = propriedades.favoritos[favoritosName];
-        return (
-          <FavoriteCards key={favoritosName}>
-            <h2>{favoritosName}</h2>
-            <div>
-              {favoritos.map((favorito) => {
-                return (
-                  <section key={favorito.id}>
-                    <UserImgFav
-                      src={`https://github.com/${favorito.user_nickname}.png`}
-                    />
+      {FavoriteUser && (
+        <FavoriteCards>
+          <h2>Favoritos</h2>
+          <div>
+            {FavoriteUser.map((data) => {
+              return (
+                <section key={data.id}>
+                  <UserImgFav
+                    src={`https://github.com/${data.user_name}.png`}
+                  />
 
-                    <NomeUserFav>
-                      <a
-                        href={`https://github.com/${favorito.user_nickname}`}
-                      >{`@${favorito.user_nickname}`}</a>
-                    </NomeUserFav>
-                  </section>
-                );
-              })}
-            </div>
-          </FavoriteCards>
-        );
-      })}
+                  <NomeUserFav>
+                    <a
+                      href={`https://github.com/${data.user_name}`}
+                    >{`@${data.user_name}`}</a>
+                  </NomeUserFav>
+                </section>
+              );
+            })}
+          </div>
+        </FavoriteCards>
+      )}
     </ContainTimeline>
   );
 }
